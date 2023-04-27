@@ -1,0 +1,43 @@
+﻿@model KindHands.Models.Advertisement
+
+@{
+    ViewData["Title"] = "Удаление объявления";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+
+<h3>Вы уверены, что хотите удалить выбранное объявление?</h3>
+
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            Имя питомца
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Animal.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+    </dl>
+    <div class="details_container_description">
+        <dt class="details_container_title">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="details_container_value">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </div>
+
+    <form asp-action="Delete" class="delete_admin">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Да, удалить" class="btn_delete btn_delete_bg" />
+        <button class="btn_admin_details btn_admin_details_back btn_dermish" type="button" onclick="history.back();">Вернуться назад</button>
+    </form>
+</div>
+

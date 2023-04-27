@@ -1,0 +1,51 @@
+﻿@model KindHands.Models.Animal
+
+@{
+    ViewData["Title"] = "Удаление питомца";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+
+<h3>Вы уверены, что хотите удалить выбранного питомца?</h3>
+
+<div>   
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Breed)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Breed)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kind)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kind)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.User.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoPath)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhotoPath)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" class="delete_admin">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Да, удалить" class="btn_delete btn_delete_bg" />
+        <button class="btn_admin_details btn_admin_details_back btn_dermish" type="button" onclick="history.back();">Вернуться назад</button>
+    </form>
+</div>

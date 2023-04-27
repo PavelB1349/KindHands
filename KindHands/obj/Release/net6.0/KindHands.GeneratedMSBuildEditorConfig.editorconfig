@@ -1,0 +1,205 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = KindHands
+build_property.RootNamespace = KindHands
+build_property.ProjectDir = C:\Users\daz13\OneDrive\Рабочий стол\proj\ver1.2\ver15\KindHands\KindHands\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\daz13\OneDrive\Рабочий стол\proj\ver1.2\ver15\KindHands\KindHands
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Advertisements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Advertisements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Advertisements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Advertisements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Advertisements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Advertisements/UserAdvertisementIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0aXNlbWVudHNcVXNlckFkdmVydGlzZW1lbnRJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Animals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Animals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Animals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Animals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Animals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Animals/UserAnimalsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5pbWFsc1xVc2VyQW5pbWFsc0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Clinics/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Clinics/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Clinics/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Clinics/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Clinics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpbmljc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shelters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbHRlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shelters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbHRlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shelters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbHRlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shelters/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbHRlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shelters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hlbHRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Users/UserEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Users/UserIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Veterinarians/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaWFuc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Veterinarians/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaWFuc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Veterinarians/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaWFuc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Veterinarians/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaWFuc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Veterinarians/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmV0ZXJpbmFyaWFuc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/VolunterAnnouncements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50ZXJBbm5vdW5jZW1lbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/VolunterAnnouncements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50ZXJBbm5vdW5jZW1lbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/VolunterAnnouncements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50ZXJBbm5vdW5jZW1lbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/VolunterAnnouncements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50ZXJBbm5vdW5jZW1lbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/VolunterAnnouncements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm9sdW50ZXJBbm5vdW5jZW1lbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/daz13/OneDrive/Рабочий стол/proj/ver1.2/ver15/KindHands/KindHands/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-edug9nmidz

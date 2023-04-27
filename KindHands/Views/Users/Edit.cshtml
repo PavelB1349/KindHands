@@ -1,0 +1,89 @@
+﻿@model KindHands.Models.User
+
+@{
+    ViewData["Title"] = "Редактировать аккаунт пользователя";
+}
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", new { controller="" })">Главная</a></li>
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", new { controller="Users" })">Пользователи</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+    </ol>
+</nav>
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
+@if (User.IsInRole("ROLE_ADMIN") || User.IsInRole("ROLE_MODERATOR"))
+{
+    <h1>@ViewData["Title"]</h1>
+
+    <hr />
+    <main class="main_container">
+        <form class="form" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form_field">
+                <input asp-for="UserName" placeholder="Имя пользователя" class="form_field_control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form_field">
+                <input asp-for="Password" placeholder="Пароль" type="password" class="form_field_control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form_field">
+                <input asp-for="ConfirmPassword" placeholder="Подтверждение пароля" type="password" class="form_field_control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form_field">
+                <input asp-for="City" placeholder="Город" class="form_field_control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <div class="form_field">
+                <input asp-for="Phone" placeholder="Телефон" class="form_field_control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form_field">
+                <input asp-for="Email" placeholder="Email" class="form_field_control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            @if (User.IsInRole("ROLE_ADMIN"))
+            {
+                <div class="form_field_checkbox">
+                    <label asp-for="IsAdmin" class="label_checkbox">Администратор</label>
+                    <input asp-for="IsAdmin" type="checkbox" value="true" />
+                </div>
+                <div class="form_field_checkbox">
+                    <label asp-for="IsModerator" class="control-label label_checkbox">Модератор</label>
+                    <input asp-for="IsModerator" type="checkbox" value="true" />
+                </div>
+            }
+            <input type="submit" value="Сохранить" class="btn_admin_details btn_admin_details_back btn_dermish" />
+            <button class="btn_admin_details btn_admin_details_back btn_dermish" type="button" onclick="history.back();">Вернуться назад</button>
+        </form>
+    </main>
+
+
+
+
+}
+else
+{
+    <h1>Нет прав доступа!</h1>
+    <div>
+        <a class="btn btn-primaty" asp-action="Index">Back to List</a>
+    </div>
+}
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

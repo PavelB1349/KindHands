@@ -1,0 +1,61 @@
+﻿@model KindHands.Models.User
+
+@{
+    ViewData["Title"] = "Информация о пользователе";
+}
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", new { controller="" })">Главная</a></li>
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", new { controller="Users" })">Пользователи</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+    </ol>
+</nav>
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <hr />
+    <div class="details_container">
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.City)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.City)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Phone)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DateCreated)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateCreated)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="btns_admin_details btn_details_users">
+        @if (User.IsInRole("ROLE_ADMIN") || User.IsInRole("ROLE_MODERATOR"))
+        {
+            <a class="btn_admin_details btn_admin_details_edit btn_vol" asp-action="Edit" asp-route-id="@Model?.Id">Редактировать информацию</a>
+        }
+        <a class="btn_admin_details btn_admin_details_back btn_vol " asp-action="Index">Вернуться назад</a>
+    </div>
+
+</div>
+

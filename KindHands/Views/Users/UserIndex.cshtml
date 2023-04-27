@@ -1,0 +1,70 @@
+﻿@model IEnumerable<KindHands.Models.User>
+
+@{
+    ViewData["Title"] = "Личный кабинет";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", new { controller="" })">Главная</a></li>        
+        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+    </ol>
+</nav>
+<h1>@ViewData["Title"]</h1>
+
+@if (User.Identity?.IsAuthenticated == true)
+{
+    <div class="details_container">
+        <dl class="row">
+            <h3 a>Информация о пользователе</h3>
+            @foreach (var item in Model)
+            {
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(modelItem => item.UserName)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(modelItem => item.City)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(modelItem => item.City)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(modelItem => item.Email)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(modelItem => item.Email)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(modelItem => item.Phone)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </dd>
+                <dt class="col-sm-2">
+                    Дата регистрации
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(modelItem => item.DateCreated)
+                </dd>
+                <button class="infoButton edit"><a asp-action="UserEdit" asp-route-id="@item.Id">Редактировать профиль</a></button>
+                <button class="infoButton delete"><a asp-action="Delete" asp-route-id="@item.Id">Удалить аккаунт</a></button>
+            }
+        </dl>
+    </div>
+}
+else
+{
+    <h3>Войдите в аккаунт!</h3>
+}
+

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<KindHands.Models.Advertisement>
+
+@{
+    ViewData["Title"] = "Мои объявления";
+}
+
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", new { controller="" })">Главная</a></li>        
+        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+    </ol>
+</nav>
+
+<h1>@ViewData["Title"]</h1>
+<p class="page_btn_create">
+    <a asp-action="Create">Добавить новое объявление</a>
+</p>
+
+<p class="info_create_adevertisement">
+    Для того, чтобы подать объявления, сначала необходимо зайти во влкадку "Мои питомцы"
+    и создать профиль животного. Далее нужно зайти во вкладку
+    "Мои объявления" для создания объявления и действовать по инструкции.
+</p>
+
+<div class="advertisementConatainer">
+    @foreach (var item in Model)
+{
+    <div class="advertisementInfoBlock">
+        <div class="advertisementImage">
+                <img src="@Html.DisplayFor(modelItem => item.Animal.PhotoPath)" alt="Фото отсутствует" />
+        </div>
+        <div class="infoFieldTitle">
+            @Html.DisplayFor(modelItem => item.Description)
+        </div>
+        <div class="infoFieldName">
+            @Html.DisplayFor(modelItem => item.Animal.Name)
+        </div>
+        <div class="infoFieldAge">
+            <span class="infoAge">Возраст:</span><span class="infoAgeValue">@Html.DisplayFor(modelItem => item.Animal.Age)</span>
+        </div>
+        <div class="infoFieldDate">
+            <span class="infoDate">Добавлено:</span> <span class="infoDateValue">@Html.DisplayFor(modelItem => item.DateCreated)</span>
+        </div>
+        <div class="infoFieldButtons">
+            <button class="infoButton details"><a asp-action="Details" asp-route-id="@item.Id">Детали</a></button>
+                <button class="infoButton edit"><a asp-action="Edit" asp-route-id="@item.Id">Править</a></button>
+                <button class="infoButton delete"><a asp-action="Delete" asp-route-id="@item.Id">Удалить</a></button>
+        </div>
+    </div>
+}
+</div>
+
+

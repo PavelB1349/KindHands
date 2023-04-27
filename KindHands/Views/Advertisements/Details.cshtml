@@ -1,0 +1,97 @@
+﻿@model KindHands.Models.Advertisement
+
+@{
+    ViewData["Title"] = "Детали объявления";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="@Url.Action("Index", new { controller="" })">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+    </ol>
+</nav>
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <hr />
+    <div class="details_container">
+        <dl class="row">
+            <dt class="col-sm-2">
+                Кличка
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Animal.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Animal.Age)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Animal.Age)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Animal.Breed)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Animal.Breed)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Animal.Passport)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Animal.Passport)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Animal.Sex)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Animal.Sex)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.User.City)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.User.City)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.User.Phone)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.User.Phone)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.User.Email)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.User.Email)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DateCreated)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DateCreated)
+            </dd>
+        </dl>
+        <img src="@Html.DisplayFor(model => model.Animal.PhotoPath)" alt="Фото отсутствует" />
+    </div>
+    <div class="details_container_description">
+        <dt class="details_container_title">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="details_container_value">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </div>
+</div>
+
+<button class="btn_admin_details btn_admin_details_back" type="button" onclick="history.back();" >Вернуться назад</button>
+

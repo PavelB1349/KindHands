@@ -1,0 +1,78 @@
+﻿@model KindHands.Models.Animal
+
+@{
+    ViewData["Title"] = "Добавить питомца";    
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+<div class="main_container">
+    
+
+        <form class="form" asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form_field">
+                <input asp-for="Name" width="100%" placeholder="Кличка питомца" class=" form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form_field">
+                <input asp-for="Age" placeholder="Возраст" class=" form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="form_field">
+                <input asp-for="Breed" placeholder="Порода" class="form-control" />
+                <span asp-validation-for="Breed" class="text-danger"></span>
+            </div>
+            <br />
+        <div class="form_field">
+                <select class="form-select" aria-label="Default select exemple" asp-for="Kind">
+                    <option selected>Вид животного</option>
+                    <option value="0">кот</option>
+                    <option value="1">собака</option>
+                    <option value="2">другие животные</option>
+                </select>
+            </div>
+            <br />
+        <div class="form_field">
+            <select class="form-select" aria-label="Default select exemple" asp-for="Passport">
+                    <option selected>Ветеринарный паспорт</option>
+                    <option value="0">Нет</option>
+                    <option value="1">Есть</option>
+                </select>
+            </div>
+            <br />
+        <div class="form_field">
+                <select class="form-select" aria-label="Default select exemple" asp-for="Sex">
+                    <option selected>Выберите пол</option>
+                    <option value="0">мужской</option>
+                    <option value="1">женский</option>
+                </select>
+            </div>
+            <input asp-for="UserId" type="hidden" value="@ViewBag.UserId" />
+
+        <div class="form_field">
+                <label for="Photo" class="control-label">Добавить фото</label>
+                <input name="Photo" id="Photo" type="file" class="form-control" />              
+            </div>
+            <br />
+        <input type="submit" value="Сохранить" class="btn_admin_details btn_admin_details_back btn_dermish" />
+        <button class="btn_admin_details btn_admin_details_back btn_dermish" type="button" onclick="history.back();">Вернуться назад</button>
+        </form>
+</div>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,109 @@
+﻿@model IEnumerable<KindHands.Models.Animal>
+
+@{
+    ViewData["Title"] = "Питомцы";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<h1>@ViewData["Title"]</h1>
+@if (User.IsInRole("ROLE_ADMIN"))
+{
+<p class="page_btn_create">
+    <a asp-action="Create">Добавить питомца</a>
+</p>
+<table class="table">
+    <thead class="thead_animals">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id) питомца
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kind)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name) питомца
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Breed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sex)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Passport)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Id) 
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.City)
+            </th>            
+            <th>
+                @Html.DisplayNameFor(model => model.DateCreated)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="tbody_animals">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kind)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Breed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sex)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Passport)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.City)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateCreated)
+                </td>
+                <td>
+                    <button class="infoButton details"><a asp-action="Details" asp-route-id="@item.Id">Детали</a></button>
+                    <button class="infoButton edit"><a asp-action="Edit" asp-route-id="@item.Id">Править</a></button>
+                    <button class="infoButton delete"><a asp-action="Delete" asp-route-id="@item.Id">Удалить</a></button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+}
+else{
+    <h3>Нет прав доступа!</h3>
+}

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<KindHands.Models.User>
+
+@{
+    ViewData["Title"] = "Пользователи";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<h1>@ViewData["Title"]</h1>
+
+@if (User.IsInRole("ROLE_ADMIN"))
+{
+    <p class="page_btn_create">
+        <a asp-action="Create">Добавить нового пользователя</a>
+    </p>
+
+    <table class="table">
+        <thead class="thead_people">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Phone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsAdmin)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IsModerator)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DateCreated)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="tbody_people">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsAdmin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsModerator)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DateCreated)
+                    </td>
+                    <td>
+                        <button class="infoButton details"><a asp-action="Details" asp-route-id="@item.Id">Детали</a></button>
+                        <button class="infoButton edit"><a asp-action="Edit" asp-route-id="@item.Id">Править</a></button>
+                        <button class="infoButton delete"><a asp-action="Delete" asp-route-id="@item.Id">Удалить</a></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h3>Нет прав доступа!</h3>
+}
+

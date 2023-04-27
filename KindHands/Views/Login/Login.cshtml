@@ -1,0 +1,42 @@
+﻿@model LoginViewModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Вход";
+}
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/MyStyles.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/KindHands.styles.css" asp-append-version="true" />
+
+<body class="text-center">
+
+    <main class="main_container">
+        <form class="form" method="post" asp-action="Login">
+
+            <h1 class="form_h1">Введите логин и пароль для входа</h1>
+            <div class="form_username">
+                <input placeholder="Имя пользователя" asp-for="Username" class="form_username_control"/>                
+            </div>           
+            <div class="form_password">
+                <input placeholder="Пароль" asp-for="Password" type="password" class="form_password_control">
+            </div>
+            <div class="form_checkbox">
+                <label class="btn_rememberMe">
+                    <input  asp-for="RememberMe"> @Html.DisplayNameFor(x=>x.RememberMe)
+                </label>
+            </div>
+            <button class="btn_submit" type="submit">Вход</button>
+            <a class="btn btn_create" asp-area="" asp-controller="Users" asp-action="Create">Создать аккаунт</a>
+            <a class="btn btn_home" asp-area="" asp-controller="Home" asp-action="Index">Начальная страница</a>
+        </form>
+    </main>
+
+
+
+</body>
+
+@*</html>
+*@
+
+
